@@ -1,13 +1,13 @@
 # InfoSec_BAC
 
 This project demonstrates broken and working access control on a flask app.
-for this, we have two flask apps that , while looking alike, are based on two different kinds of access.
+for this, we have two flask apps that, while looking alike, are based on two different kinds of access.
 
 
 The first example (broken_access_control) only checks for the entered user-data to be correct and continues to identify the user using a URL argument.
 This argument can be altered to see the profile of a different user.
 
-The second example (working_access_control) uses the flask-login package to properly authenticate the user. When the user accesses the profile page, a session cookie, sent by a user is used to properly identify and authenticate the already logged in user.
+The second example (working_access_control) uses the flask-login module to properly authenticate the user. When the user accesses the profile page, a session cookie, sent by a user is used to properly identify and authenticate the already logged in user.
 
 User credentials for testing:
 Paul:V3ryS3cr3t!
