@@ -1,0 +1,32 @@
+<!-- Slightly based on: https://www.w3schools.com/howto/howto_css_login_form.asp -->
+<html>
+    {% include 'base.html' %}
+
+    <body>
+        <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+            <form action="/login" method="post">
+                <div class="container">
+                    
+                    {% if login_required == True %}
+                    <h5 class="text-center my-5">Login is required to access this page.</h5>
+                    {% endif %}
+                    
+                    <div class="form-row">
+                        <h5 class="text-center">Username</h5>
+                        <input class="form-control" type="text" placeholder="Enter Username" name="username" required>
+                    </div>
+                    <div class="form-row">
+                        <h5 class="text-center ">Password</h5>
+                        <input class="form-control" type="password" placeholder="Enter Password" name="password" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="col text-center">
+                            <button class="btn btn-primary my-2" type="submit">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
