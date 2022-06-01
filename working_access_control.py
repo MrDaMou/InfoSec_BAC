@@ -57,7 +57,7 @@ class User(flask_login.UserMixin):
     def get_id(self):
         return self.id
 
-users = [User(1, 'Paul', '123', 'Taylor Swift'), User(2 ,'Moritz', '456', 'Katy Perry')]
+users = [User(1, 'Paul', 'V3ryS3cr3t!', 'Taylor Swift'), User(2 ,'Moritz', 'Sup€r€cr€t!', 'Lana Del Rey')]
 
 @login_manager.user_loader
 def load_user(userid):

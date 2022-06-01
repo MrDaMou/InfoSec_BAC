@@ -53,4 +53,4 @@ class User():
     def get_id(self):
         return self.id
 
-users = [User(1, 'Paul', 'V3ryS3cr3t!', 'Taylor Swift'), User(2 ,'Moritz', 'Sup€r€cr€t!', 'Katy Perry')]
+users = [User(1, 'Paul', 'V3ryS3cr3t!', 'Taylor Swift'), User(2 ,'Moritz', 'Sup€r€cr€t!', 'Lana Del Rey')]
