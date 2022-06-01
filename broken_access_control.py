@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
-app.secret_key = '1'
+app.secret_key = 'r9/EZCr;NWug>[_>'
 
 
 @app.route("/")
@@ -52,8 +52,5 @@ class User():
 
     def get_id(self):
         return self.id
-        
-    def __repr__(self):
-        return "%d/%s/%s" % (self.id, self.name, self.password)
 
-users = [User(1, 'Paul', '123', 'Taylor Swift'), User(2 ,'Moritz', '456', 'Katy Perry')]
+users = [User(1, 'Paul', 'V3ryS3cr3t!', 'Taylor Swift'), User(2 ,'Moritz', 'Sup€r€cr€t!', 'Katy Perry')]

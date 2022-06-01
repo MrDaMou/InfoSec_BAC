@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import flask_login
 
 app = Flask(__name__)
-app.secret_key = '1'
+app.secret_key = 'r9/EZCr;NWug>[_>'
 
 login_manager = flask_login.LoginManager()
 login_manager.init_app(app)
@@ -56,9 +56,6 @@ class User(flask_login.UserMixin):
 
     def get_id(self):
         return self.id
-        
-    def __repr__(self):
-        return "%d/%s/%s" % (self.id, self.name, self.password)
 
 users = [User(1, 'Paul', '123', 'Taylor Swift'), User(2 ,'Moritz', '456', 'Katy Perry')]
 
