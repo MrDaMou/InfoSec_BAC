@@ -18,9 +18,7 @@ def login():
     if request.method == "GET":
         
         if 'next' in request.args:
-            print("ayy")
             if 'profile' in request.args['next']:
-                print("ayy")
                 return render_template('login.html', title='Login', login_required=True)
 
         return render_template('login.html', title='Login')
